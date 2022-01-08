@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupom de desconto Buser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cupom-de-desconto">
+            <img src="logo.png" class="logo" alt="logomarca da empresa Buser">
+            <h3>50% de desconto para novos usuários.</h3>
+
+            <div class="cupom-row">
+                <span id="cupomcodigo">CUPOM50%DEDESCONTO</span>
+                <span id=cupomcopiar>COPIAR O CODIGO</span>
+            </div>
+            <p>Valido até: 05 de Maio de 2022.</p>
+
+            <div class="circulo1"></div>
+            <div class="circulo2"></div>
+        </div>
+    </div>
+
+    <script>
+        var cupomcopiar = document.getElementById("cupomcopiar");
+        var cupomcodigo = document.getElementById("cupomcodigo");
+
+        cupomcopiar.onclick = function(){
+            navigator.clipboard.writeText(cupomcodigo.innerHTML);
+            cupomcopiar.innerHTML = "CODIGO COPIADO";
+            setTimeout(function(){
+                cupomcopiar.innerHTML = "COPIAR O CODIGO";
+            }, 3000);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2? família=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupom-de-desconto{
+    background: linear-gradient(135deg, rgb(230, 120, 120), rgb(138, 77, 77));
+    color: #fff;
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+
+.cupom-de-desconto h3{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.cupom-de-desconto p{
+    font-size: 15px;
+}
+
+.cupom-row{
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    width: fit-content;
+}
+
+#cupomcodigo{
+    border: 1px dashed #fff;
+    padding: 10px 20px;
+    border-right: 0;
+}
+
+#cupomcopiar{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: rgb(135, 71, 71);
+    cursor: pointer;
+}
+
+.circulo1, .circulo2 {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circulo1{
+    left: -25px;
+}
+
+.circulo2{
+    right: -25px;
+}
